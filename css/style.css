@@ -25,3 +25,44 @@ p {
 div{
   margin: 9px 9px;
 }
+section{  
+  background-color: black;
+  color: white; 
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+.MenuNav{
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+  text-align: center;
+  display: block;
+  padding: 5px;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;    
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.MenuLista{
+  text-align: center;  
+  overflow: hidden;
+  background-color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  top: 0;   
+}
+.MenuLink{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.MenuItem{
+  border-right: 1px solid #bbb;
+  float: left;    
+}   
