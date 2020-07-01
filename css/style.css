@@ -33,6 +33,7 @@ section{
   padding: 0;
   width: 100%;
 }
+
 .MenuNav{
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
@@ -47,7 +48,9 @@ section{
   flex-direction: row;
 }
 .MenuLista{
+  list-style-type: none;
   text-align: center;  
+  align-items: center;
   overflow: hidden;
   background-color: #333;
   margin: 0 auto;
@@ -57,12 +60,38 @@ section{
 }
 .MenuLink{
   display: inline-block;
-  color: white;
+  color: #f9f9f9;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 38px 16px;
+  text-decoration: none;  
 }
 .MenuItem{
   border-right: 1px solid #bbb;
-  float: left;    
+  float: left;  
+  padding: 0px 60px;
+  margin: 0px 30px;
+  height: 100%;
 }   
+.MenuDesplegar{
+  position: relative;
+  display: inline-block;
+  padding: 38px 0px;
+}
+.DesplegarContenido{
+  display: none;
+  position: absolute;
+  background-color:  whitesmoke;
+  min-width: 190px;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 9px 9px;
+  z-index: 1;
+}
+.MenuDesplegar:hover .DesplegarContenido {
+  display: block;
+}
+.DesplegarLink {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
